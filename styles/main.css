@@ -1,0 +1,143 @@
+
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+* {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+box-sizing: border-box;
+}
+
+html {
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+body {
+background-image: url(../img/space.jpg);
+background -size: cover;
+font-family: 'PT Sans', monospace;
+}
+
+main {
+height: 100%;
+width: 100%;
+}
+
+p {
+position: absolute;
+left: 98px;
+top: 88px;
+font-family: PT Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 104px;
+line-height: 80px;
+color: #A1008B;
+z-index: 3;
+}
+
+.block_1 {
+  position: absolute;
+}
+
+.block_2 {
+  position: absolute;
+}
+
+.space {
+ left: 12vw;
+ top: 14vw;
+ height: 66vh;
+ width: 68vh;
+ position: relative;
+}
+
+.space02 {
+  margin-left: 70vw;
+  margin-top: 10vw;
+  height: 47vh;
+  width: 50vh;
+  position: relative;
+}
+
+.but ton {
+font-family: 'PT Mono';
+font-size: 18px;
+font-weight: bold;
+color: #FFFFFF;
+padding: 10px 75px;
+margin: 0 20px;
+text-shadow: 2px 2px 1px #595959;
+filter: dropshadow(color=#595959, offx=1, offy=1);
+text-decoration: none;
+border: solid 1px #3b7200;
+background-color: #88c72a;
+}
+
+.osnova {
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+}
+
+
+ul {
+background: darkorange;
+list-style: none;
+margin: 0;
+padding-left: 0;
+text-decoration: none;
+}
+
+li {
+font-size: 104px;
+line-height: 80px;
+color: #A1008B;
+display: block;
+float: left;
+padding: 1rem;
+position: relative;
+text-decoration: none;
+transition-duration: 0.5s;
+}
+
+li a {
+  co lor: #fff;
+}
+
+li:hover,
+li:focus-within {
+    background: red;
+    cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+visibility: hidden;
+opacity: 0;
+min-width: 5rem;
+position: absolute;
+transition: all 0.5s ease;
+margin-top: 1rem;
+left: 60;
+display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
